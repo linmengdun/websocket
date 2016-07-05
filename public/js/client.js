@@ -104,7 +104,7 @@
 			
 			//监听新用户登录
 			this.socket.on('login', function(o){
-				CHAT.updateSysMsg(o, 'login');	
+				CHAT.updateSysMsg(o, 'login');
 			});
 			
 			//监听用户退出
@@ -127,7 +127,7 @@
 					section.innerHTML = usernameDiv + contentDiv;
 				}
 				CHAT.msgObj.appendChild(section);
-				CHAT.scrollToBottom();	
+				CHAT.scrollToBottom();
 			});
 
 		}
