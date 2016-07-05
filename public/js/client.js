@@ -49,7 +49,7 @@
 			var onlineCount = o.onlineCount;
 			//新加入用户的信息
 			var user = o.user;
-				
+			
 			//更新在线人数
 			var userhtml = '';
 			var separator = '';
@@ -97,7 +97,7 @@
 			this.scrollToBottom();
 			
 			//连接websocket后端服务器
-			this.socket = io.connect('ws://192.168.226.126:3000/');
+			this.socket = io.connect('ws://10.255.204.199:3000/');
 			
 			//告诉服务器端有用户登录
 			this.socket.emit('login', {userid:this.userid, username:this.username});
